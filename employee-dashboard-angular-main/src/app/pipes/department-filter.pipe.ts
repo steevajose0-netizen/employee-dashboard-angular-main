@@ -1,0 +1,15 @@
+import { Pipe, PipeTransform } from '@angular/core';
+import { Employee } from '../models/employee.model';
+
+@Pipe({
+  name: 'departmentFilter',
+  standalone: true
+})
+export class DepartmentFilterPipe implements PipeTransform {
+  transform(employees: Employee[] | null, department: string): Employee[] {
+    if (!employees || !department) {
+      return employees || [];
+    }
+    return employees.filter(emp => emp.department.toLowerCase() === department.toLowerCase());
+  }
+}

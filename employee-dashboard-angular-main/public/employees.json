@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "role": "Software Engineer",
+    "department": "Engineering",
+    "salary": 95000,
+    "joiningDate": "2021-03-15T00:00:00Z"
+  },
+  {
+    "id": 2,
+    "name": "Bob Smith",
+    "role": "Product Manager",
+    "department": "Product",
+    "salary": 110000,
+    "joiningDate": "2019-11-01T00:00:00Z"
+  },
+  {
+    "id": 3,
+    "name": "Charlie Brown",
+    "role": "QA Analyst",
+    "department": "Engineering",
+    "salary": 75000,
+    "joiningDate": "2022-06-20T00:00:00Z"
+  },
+  {
+    "id": 4,
+    "name": "Diana Prince",
+    "role": "HR Manager",
+    "department": "HR",
+    "salary": 85000,
+    "joiningDate": "2020-01-10T00:00:00Z"
+  },
+  {
+    "id": 5,
+    "name": "Evan Wright",
+    "role": "DevOps Engineer",
+    "department": "Engineering",
+    "salary": 105000,
+    "joiningDate": "2021-09-05T00:00:00Z"
+  }
+]

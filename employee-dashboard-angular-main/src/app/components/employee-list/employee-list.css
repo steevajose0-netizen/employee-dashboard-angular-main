@@ -1,0 +1,17 @@
+.list-container {
+  padding: 2rem;
+}
+
+.header-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.filter-field {
+  width: 300px;
+}
+
+.employee-table {
+  width: 100%;
+}

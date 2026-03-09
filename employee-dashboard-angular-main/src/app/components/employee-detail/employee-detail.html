@@ -1,0 +1,33 @@
+<div class="detail-container" *ngIf="employee">
+  <mat-card class="employee-card">
+    <mat-card-header>
+      <div mat-card-avatar class="avatar">
+        <mat-icon>person</mat-icon>
+      </div>
+      <mat-card-title>{{ employee.name }}</mat-card-title>
+      <mat-card-subtitle>{{ employee.role }}</mat-card-subtitle>
+    </mat-card-header>
+    
+    <mat-divider></mat-divider>
+    
+    <mat-card-content class="content-body">
+      <div class="info-row">
+        <strong>Employee ID:</strong> <span>{{ employee.id }}</span>
+      </div>
+      <div class="info-row">
+        <strong>Department:</strong> <span>{{ employee.department }}</span>
+      </div>
+      <div class="info-row">
+        <strong>Salary:</strong> <span>{{ employee.salary | currency:'USD' }}</span>
+      </div>
+      <div class="info-row" *ngIf="employee.joiningDate">
+        <strong>Joined On:</strong> <span>{{ employee.joiningDate | date:'longDate' }}</span>
+      </div>
+    </mat-card-content>
+    
+    <mat-card-actions align="end">
+      <button mat-button (click)="goBack()">Back to List</button>
+      <button mat-flat-button color="accent" [routerLink]="['/edit', employee.id]">Edit</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
